@@ -31,3 +31,28 @@ h1{
 h1:hover{
     color: gainsboro;
 }
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+}
+.card{
+    width: 450px;
+}
+.card-title{
+    text-align: center;
+    font-family: 'Nunito Sans';
+}
+
+.btn-floating{
+    background-color: gray;
+}
+.btn-floating:hover{
+    background-color: brown;
+}
+.page-footer{
+    background-color: burlywood;
+}
+p{
+    text-align: center;
+}

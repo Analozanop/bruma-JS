@@ -1,0 +1,74 @@
+[
+    {
+        "id": "bruma-uno",
+        "titulo": "Bruma I",
+        "descripcion":"Gel de limpieza",
+        "precio": 1500,
+        "imagen": "imagenes/bruma-1.jpg",
+        "valor": "producto-1"
+    },
+    {
+        "id": "espengula-dos",
+        "titulo": "Espengula II",
+        "descripcion":"Crema hidratante",
+        "precio": 1500,
+        "imagen": "imagenes/espengula-2.jpg",
+        "valor": "producto-2"
+    },
+    {
+        "id": "umbrios-dos",
+        "titulo": "Umbrios ii",
+        "descripcion":"Sales baño",
+        "precio": 2500,
+        "imagen": "imagenes/umbrios-2.jpg",
+        "valor": "producto-3"
+    },
+    {
+        "id": "carnelio-dos",
+        "titulo": "Carnelio II",
+        "descripcion":"Serum facial",
+        "precio": 2500,
+        "imagen": "imagenes/carnelio-2.jpg",
+        "valor": "producto-4"
+    },
+    {
+        "id": "eco-dos",
+        "titulo": "Eco II",
+        "descripcion":"Gel de limpieza",
+        "precio": 700,
+        "imagen": "imagenes/eco-2.jpg",
+        "valor": "producto-5"
+    },
+    {
+        "id": "sabiduria-uno",
+        "titulo": "Sabiduria I",
+        "descripcion":"Sales baño",
+        "precio": 2500,
+        "imagen": "imagenes/sabiduria-1.jpg",
+        "valor": "producto-6"
+    },
+    {
+        "id": "ritural-uno",
+        "titulo": "Ritual I",
+        "descripcion":"ritual semanal",
+        "precio": 5000,
+        "imagen": "imagenes/ritual-1.jpg",
+        "valor": "producto-7"
+    },
+    {
+        "id": "ritural-dos",
+        "titulo": "Ritual II",
+        "descripcion":"ritual semanal",
+        "precio": 2500,
+        "imagen": "imagenes/ritual-2.jpg",
+        "valor": "producto-8"
+    },
+    {
+        "id": "ritural-tres",
+        "titulo": "Ritual III",
+        "descripcion":"ritual semanal",
+        "precio": 3500,
+        "imagen": "imagenes/ritual-3.jpg",
+        "valor": "producto-9"
+    }
+]
