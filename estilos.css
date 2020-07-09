@@ -1,0 +1,33 @@
+nav{
+    background-color: white;
+    box-shadow: none;
+}
+nav .brand-logo{
+    color: black;
+    font-family: 'DM Serif Display', serif;
+    padding-left: 30px;
+    font-size: 60px;
+}
+nav .brand-logo:hover{
+    color: gray;
+}
+
+ul li a{
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+}
+.foto-portada{
+    width: 100%;
+    position: relative;
+}
+h1{
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 23%;
+    font-size: 90px;
+}
+h1:hover{
+    color: gainsboro;
+}
