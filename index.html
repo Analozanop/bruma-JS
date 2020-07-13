@@ -1,209 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito+Sans:ital,wght@0,800;1,300;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
-    <script defer src="app.js"></script>
-    <title>Bruma</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito+Sans:ital,wght@0,800;1,300;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <script defer src="app.js"></script>
+  <title>Bruma</title>
 </head>
+
 <body>
+  <div class="container-fluid">
+    <div class="row">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">B&O</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">FACIAL</a></li>
+            <li><a href="index.html">CORPORAL</a></li>
+            <li><a href="index.html">RITUAL</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="row">
+      <img src="imagenes/portada-productos.jpg" alt="montañas" class="foto-portada">
+      <h1>Nuestros productos</h1>
+    </div>
+    <div class="row">
+      <h2>Busca tu producto ideal segun tu tipo de piel</h2>
+    </div>
+  </div>
+  <div id="contenedorDeProductos"></div>
+  <p>If you click on the "Hide" button, I will disappear.</p>
+
+  <button id="hide">Hide</button>
+  <button id="show">Show</button>
+
+  <nav>
+    <!-- navbar content here  -->
+  </nav>
+
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="images/office.jpg">
+        </div>
+        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+        <a href="#name"><span class="white-text name">John Doe</span></a>
+        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div>
+    </li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+  <footer class="page-footer">
     <div class="container-fluid">
-        <div class="row">
-            <nav>
-                <div class="nav-wrapper">
-                  <a href="index.html" class="brand-logo">B&O</a>
-                  <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="index.html">FACIAL</a></li>
-                    <li><a href="index.html">CORPORAL</a></li>
-                    <li><a href="index.html">RITUAL</a></li>
-                  </ul>
-                </div>
-              </nav>
-          </div>
-          <div class="row">
-              <img src="imagenes/portada-productos.jpg" alt="montañas" class="foto-portada">
-              <h1>Nuestros productos</h1>
-          </div>
-          <div class="row">
-              <h2>Busca tu producto ideal segun tu tipo de piel</h2>
-          </div>
-          <div class="row">
-              <div class="col s12 m6 xl4">
-                  <div class="card">
-                     <div class="card-image">
-                         <img src="imagenes/bruma-1.jpg" alt="">
-                     </div>
-                     <div class="card-content">
-                       <span class="card-title">BRUMA I</span>
-                     </div>
-                    <button class="btn waves-effect" type="submit" id="bruma-uno" onclick="alert('hola')">COMPRAR</button>
-                  </div>
-              </div>
-              <div class="col s12 m6 xl4">
-                  <div class="card">
-                      <div class="card-image">
-                          <img src="imagenes/espengula-2.jpg">
-                      </div>
-                      <div class="card-content">
-                          <span class="card-title">ESPENGULA I</span>
-                      </div>
-                      <div>
-                        <button class="btn waves-effect" type="submit" id="espengula-dos">COMPRAR</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="col s12 m6 xl4">
-                   <div class="card">
-                       <div class="card-image">
-                           <img src="imagenes/umbrios-2.jpg">
-                       </div>
-                       <div class="card-content">
-                           <span class="card-title">UMBRIOS II</span>
-                       </div>
-                       <div>
-                        <button class="btn waves-effect" type="submit" id="umbrios-dos">COMPRAR</button>
-                       </div>
-                   </div>
-              </div>
-          </div>
-       <div class="row">
-            <div class="col s12 m6 xl4">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="imagenes/carnelio-2.jpg">
-                  </div>
-                  <div class="card-content">
-                     <span class="card-title">CARNELIO II</span>
-                  </div>
-                  <div>
-                    <button class="btn waves-effect" type="submit" id="carnelio-dos">COMPRAR</button>
-                  </div>
-                </div>
-            </div>
-            <div class="col s12 m6 xl4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="imagenes/eco-2.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">ECO II</span>
-                    </div>
-                    <div>
-                      <button class="btn waves-effect" type="submit" id="eco-dos">COMPRAR</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6 xl4">
-                 <div class="card">
-                     <div class="card-image">
-                         <img src="imagenes/sabiduria-1.jpg">
-                     </div>
-                     <div class="card-content">
-                         <span class="card-title">SABIDURIA I</span>
-                     </div>
-                     <div>
-                         <button class="btn waves-effect" type="submit" id="sabiduria-uno">COMPRAR</button>
-                     </div>
-                 </div>
-            </div>
+      <div class="row">
+        <div class="col xl6 m6 s12">
+          <h5 class="white-text">Bruma & Others</h5>
         </div>
-        <div class="row">
-            <div class="col s12 m6 xl4">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="imagenes/ritual-1.jpg">
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title">RITUAL I</span>
-                  </div>
-                  <div>
-                    <button class="btn waves-effect" type="submit" id="ritural-uno">COMPRAR</button>
-                  </div>
-                </div>
-            </div>
-            <div class="col s12 m6 xl4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="imagenes/ritual-2.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">RITUAL II</span>
-                    </div>
-                    <div>
-                        <button class="btn waves-effect" type="submit" id="ritural-dos">COMPRAR</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6 xl4">
-                 <div class="card">
-                     <div class="card-image">
-                         <img src="imagenes/ritual-3.jpg">
-                     </div>
-                     <div class="card-content">
-                         <span class="card-title">RITUAL III</span>
-                     </div>
-                     <div>
-                        <button class="btn waves-effect" type="submit" id="ritural-tres">COMPRAR</button>
-                     </div>
-                 </div>
-            </div>
+        <div class="col xl2 m6 s12">
+          <span class="material-icons">location_on</span>
+          <h6>Alto palermo</h6>
         </div>
-        <p>If you click on the "Hide" button, I will disappear.</p>
-
-<button id="hide">Hide</button>
-<button id="show">Show</button>
-
-<nav> <!-- navbar content here  --> </nav>
-
-<ul id="slide-out" class="sidenav">
-  <li><div class="user-view">
-    <div class="background">
-      <img src="images/office.jpg">
+        <div class="col xl2 m6 s12">
+          <span class="material-icons">local_phone</span>
+          <h6>+123456789</h6>
+        </div>
+        <div class="col xl2 m6 s12">
+          <span class="material-icons">query_builder</span>
+          <h6>De 10 a 19 hs</h6>
+        </div>
+      </div>
     </div>
-    <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-    <a href="#name"><span class="white-text name">John Doe</span></a>
-    <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-  </div></li>
-  <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-  <li><a href="#!">Second Link</a></li>
-  <li><div class="divider"></div></li>
-  <li><a class="subheader">Subheader</a></li>
-  <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-</ul>
-<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
-        <footer class="page-footer">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col xl6 m6 s12">
-                  <h5 class="white-text">Bruma & Others</h5>
-                </div>
-                <div class="col xl2 m6 s12">
-                    <span class="material-icons">location_on</span>
-                    <h6>Alto palermo</h6>
-                </div>
-                <div class="col xl2 m6 s12">
-                    <span class="material-icons">local_phone</span>
-                    <h6>+123456789</h6>
-                </div>
-                <div class="col xl2 m6 s12">
-                    <span class="material-icons">query_builder</span>
-                    <h6>De 10 a 19 hs</h6>
-                </div>
-              </div>
-            </div>
-            <div class="footer-copyright">
-              <div class="container">
-                  <p>© 2014 Copyright Text</p>
-              </div>
-            </div>
-       </footer>
+    <div class="footer-copyright">
+      <div class="container">
+        <p>© 2014 Copyright Text</p>
+      </div>
     </div>
+  </footer>
+  </div>
 </body>
+
 </html>
